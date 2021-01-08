@@ -1,5 +1,6 @@
 package com.github.palyfight.hellodocker;
 
+import com.github.lalyos.jfiglet.FigletFont;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,7 +9,9 @@ public class HellodockerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HellodockerApplication.class, args);
-		System.out.println("Hello Docker!");
+		String asciiArt = FigletFont.convertOneLine("Hello k8s");
+		System.out.println(asciiArt);
+		System.out.println("Yay Me!");
 	}
 
 }
